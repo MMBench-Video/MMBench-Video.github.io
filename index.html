@@ -45,7 +45,7 @@
                   <a href="https://karrymao.github.io/" style="font-weight:normal;">Kangrui Mao<b><sup>* &sect;2</sup></b></a>,
                 </span>
                 <span class="author-block">
-                  <a href="https://kennymckormick.github.io/" style="font-weight:normal;">Haodong Duan<b><sup>* &dagger;1</sup></b></a>,
+                  <a href="https://kennymckormick.github.io/" style="font-weight:normal;">Haodong Duan<b><sup>&dagger;1</sup></b></a>,
                 </span>
                 <span class="author-block">
                   <a href="https://github.com/PhoenixZ810/" style="font-weight:normal;">Xiangyu Zhao<b><sup>1,2</sup></b></a>,
@@ -339,6 +339,134 @@
       </div>
     </section>
 
+    <section class="hero is-light is-small" id="Leaderboard Title">
+      <div class="hero-body has-text-centered">
+        <h1 class="title is-1 mathvista">
+          <img src="images/logo.png" style="width:1em;vertical-align: middle" alt="Logo"/>
+          <span class="mathvista" style="vertical-align: middle">MMBench-Video Leaderboard</span>
+        </h1>
+      </div>
+    </section>
+    <section class="section" id="Leaderboard">
+      <div class="container"> 
+        <div class="columns is-centered">
+          <div class="column is-full has-text-centered content">
+            <div class="content">
+              <p>CP (coarse perception), FP (fine-grained perception), IR (instance reasoning), LR (logical reasoning), ST (science & technology), MA (mathematics).</p>
+              <p>The <u><b>best</b></u> results are highlighted in <u><b>bold and underlined</b></u>. The <b class="best-score-text">worst</b> results of multi-modal gain (MG) and multi-modal leakage (ML) metrics are in <b class="best-score-text">bold and red</b>.</p>
+              <table class="table is-striped js-sort-table" id="results">
+                <thead>
+                  <tr>
+                    <th rowspan="2" style="vertical-align: middle;"><strong>Model</strong></th>
+                    <th colspan="5" style="text-align: center;"><strong>Perception</strong></th>
+                    <th colspan="6" style="text-align: center;"><strong>Reasoning</strong></th>
+                    <th rowspan="2" style="vertical-align: middle;"><strong>Overall Mean</strong></th>
+                    <th rowspan="2" style="vertical-align: middle;"><strong>Model Type</strong></th>
+                  </tr>
+                  <tr>
+                    <th style="text-align: center;"><strong>CP</strong></th>
+                    <th style="text-align: center;"><strong>FP-S</strong></th>
+                    <th style="text-align: center;"><strong>FP-C</strong></th>
+                    <th style="text-align: center;"><strong>HL</strong></th>
+                    <th style="text-align: center;"><strong>Mean</strong></th>
+                    <th style="text-align: center;"><strong>LR</strong></th>
+                    <th style="text-align: center;"><strong>AR</strong></th>
+                    <th style="text-align: center;"><strong>RR</strong></th>
+                    <th style="text-align: center;"><strong>CSR</strong></th>
+                    <th style="text-align: center;"><strong>TR</strong></th>
+                    <th style="text-align: center;"><strong>Mean</strong></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Open-Source Video-LLMs -->
+                  <!-- <tr>
+                    <td colspan="13" style="background-color: #f0f8ff;"><strong>Open-Source Video-LLMs</strong></td>
+                  </tr> -->
+                  <tr>
+                    <td>Video-ChatGPT-[100f]</td>
+                    <td>0.93</td>
+                    <td>0.91</td>
+                    <td>0.94</td>
+                    <td>0.81</td>
+                    <td>0.90</td>
+                    <td>0.70</td>
+                    <td>1.15</td>
+                    <td>1.12</td>
+                    <td>0.84</td>
+                    <td>0.94</td>
+                    <td>0.97</td>
+                    <td>0.93</td>
+                    <td>Open-Source Video LLM</td>
+                  </tr>
+                  <!-- The rest of the rows for Open-Source Video-LLMs -->
+    
+                  <!-- Open-Source LVLMs for Images -->
+                  <!-- <tr>
+                    <td colspan="13" style="background-color: #e6f7ff;"><strong>Open-Source LVLMs for Images</strong></td>
+                  </tr> -->
+                  <tr>
+                    <td>Idefics2-8B-[1f]</td>
+                    <td>0.95</td>
+                    <td>1.06</td>
+                    <td>0.85</td>
+                    <td>0.81</td>
+                    <td>0.90</td>
+                    <td>0.73</td>
+                    <td>1.14</td>
+                    <td>1.08</td>
+                    <td>1.09</td>
+                    <td>1.04</td>
+                    <td>1.03</td>
+                    <td>0.95</td>
+                    <td>Open-Source LVLMs for Images</td>
+                  </tr>
+                  <!-- The rest of the rows for Open-Source LVLMs for Images -->
+    
+                  <!-- Proprietary LVLMs for Images -->
+                  <!-- <tr>
+                    <td colspan="13" style="background-color: #ffffe0;"><strong>Proprietary LVLMs for Images</strong></td>
+                  </tr> -->
+                  <tr>
+                    <td>Claude-3v-Opus-[4f]</td>
+                    <td>1.19</td>
+                    <td>1.37</td>
+                    <td>1.11</td>
+                    <td>1.00</td>
+                    <td>1.16</td>
+                    <td>1.16</td>
+                    <td>1.12</td>
+                    <td>1.35</td>
+                    <td>1.36</td>
+                    <td>1.17</td>
+                    <td>1.05</td>
+                    <td>1.19</td>
+                    <td>Proprietary LVLMs for Images</td>
+                  </tr>
+                  <!-- The rest of the rows for Proprietary LVLMs for Images -->
+                  <tr>
+                    <td>GPT-4o-[16f]</td>
+                    <td>1.86</td>
+                    <td>2.03</td>
+                    <td>1.88</td>
+                    <td>1.69</td>
+                    <td>1.86</td>
+                    <td>1.78</td>
+                    <td>1.95</td>
+                    <td>1.78</td>
+                    <td>1.90</td>
+                    <td>1.89</td>
+                    <td>1.80</td>
+                    <td>1.86</td>
+                    <td>Proprietary LVLMs for Images</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
@@ -367,7 +495,7 @@
             </p>
             <centering>
               <div style="width: 30%; text-align: center;">
-                <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=DDmpsVeUO0mQXQFfT33dAl8ROkUr79QB8ZwzE8x7EH8"></script>
+                <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=6Resz4ZWizFsma4DsbyQlyLwbmZprUilUBJHZF4aQOE&cl=ffffff&w=a"></script>
               </div>
             </centering>
           </div>
