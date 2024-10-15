@@ -351,12 +351,6 @@
                       </tr>
                     </tbody>
                   </table> -->
-                  <script
-                    type="module"
-                    src="https://gradio.s3-us-west-2.amazonaws.com/4.44.0/gradio.js"
-                  ></script>
-
-                  <gradio-app src="https://opencompass-openvlm-video-leaderboard.hf.space"></gradio-app>
                   
                   <div style="text-align: left;">
                       <img id="pie" width="100%" src="images/video_data_for_page.png">
@@ -433,7 +427,14 @@
             <div class="content">
               <p>Perception: CP (coarse perception), FP-S (single-instance fine-grained perception), FP-C (cross-instance fine-grained perception), HL (Hallucination)</p>
               <p>Reasoning: LR (logic reasoning), AR (attribute reasoning), RR (relation reasoning), CSR (commonsense reasoning), TR (temporal reasoning)</p>
-              <p>The <u><b>best</b></u> results are highlighted in <u><b>bold and underlined</b></u>.
+              <!-- <p>The <u><b>best</b></u> results are highlighted in <u><b>bold and underlined</b></u>. -->
+              
+              <script
+                type="module"
+                src="https://gradio.s3-us-west-2.amazonaws.com/4.44.0/gradio.js"
+              ></script>
+
+              <gradio-app src="https://opencompass-openvlm-video-leaderboard.hf.space"></gradio-app>
               <!-- <table class="table is-striped js-sort-table" id="results">
                 <thead>
                   <tr>
