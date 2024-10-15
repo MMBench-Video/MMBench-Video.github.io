@@ -350,7 +350,14 @@
                         <td>32.6(33.5)</td>
                       </tr>
                     </tbody>
-                  </table> --> 
+                  </table> -->
+                  <script
+                    type="module"
+                    src="https://gradio.s3-us-west-2.amazonaws.com/4.44.0/gradio.js"
+                  ></script>
+
+                  <gradio-app src="https://opencompass-openvlm-video-leaderboard.hf.space"></gradio-app>
+                  
                   <div style="text-align: left;">
                       <img id="pie" width="100%" src="images/video_data_for_page.png">
                       <p style="font-family:Times New Roman">
@@ -427,7 +434,7 @@
               <p>Perception: CP (coarse perception), FP-S (single-instance fine-grained perception), FP-C (cross-instance fine-grained perception), HL (Hallucination)</p>
               <p>Reasoning: LR (logic reasoning), AR (attribute reasoning), RR (relation reasoning), CSR (commonsense reasoning), TR (temporal reasoning)</p>
               <p>The <u><b>best</b></u> results are highlighted in <u><b>bold and underlined</b></u>.
-              <table class="table is-striped js-sort-table" id="results">
+              <!-- <table class="table is-striped js-sort-table" id="results">
                 <thead>
                   <tr>
                     <th rowspan="2" style="vertical-align: middle;"><strong>Model</strong></th>
@@ -451,10 +458,6 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <!-- Open-Source Video-LLMs -->
-                  <!-- <tr>
-                    <td colspan="13" style="background-color: #f0f8ff;"><strong>Open-Source Video-LLMs</strong></td>
-                  </tr> -->
 
                   <tr>
                     <td>GPT-4o-0806-[16f] 🥇</td>
@@ -472,23 +475,6 @@
                     <td><u><b>1.87</b></u></td>
                     <td>Proprietary LVLMs for Images</td>
                   </tr>
-
-                  <!-- <tr>
-                    <td>GPT-4v-[8f] 🥈</td>
-                    <td>1.68</td>
-                    <td>1.45</td>
-                    <td><u><b>1.43</b></u></td>
-                    <td>1.79</td>
-                    <td>1.51</td>
-                    <td>1.14</td>
-                    <td>1.81</td>
-                    <td><u><b>1.70</b></u></td>
-                    <td>1.59</td>
-                    <td>1.39</td>
-                    <td>1.52</td>
-                    <td>1.53</td>
-                    <td>Proprietary LVLMs for Images</td>
-                  </tr> -->
 
                   <tr>
                     <td>Gemini-1.5-Flash-[16f] 🥈</td>
@@ -745,54 +731,9 @@
                     <td>Open-Source LVLM for Videos</td>
                   </tr>
 
-                  
-                  <!-- <tr>
-                    <td>idefics2-8B-[1f]</td>
-                    <td>1.06</td>
-                    <td>0.85</td>
-                    <td>0.81</td>
-                    <td>1.35</td>
-                    <td>0.90</td>
-                    <td>0.73</td>
-                    <td>1.14</td>
-                    <td>1.08</td>
-                    <td>1.09</td>
-                    <td>1.04</td>
-                    <td>1.03</td>
-                    <td>0.95</td>
-                    <td>Open-Source LVLM for Images</td>
-                  </tr> -->
-
-                  <!-- The rest of the rows for Open-Source Video-LLMs -->
-    
-                  <!-- Open-Source LVLMs for Images -->
-                  <!-- <tr>
-                    <td colspan="13" style="background-color: #e6f7ff;"><strong>Open-Source LVLMs for Images</strong></td>
-                  </tr> -->
-    
-                  <!-- Proprietary LVLMs for Images -->
-                  <!-- <tr>
-                    <td colspan="13" style="background-color: #ffffe0;"><strong>Proprietary LVLMs for Images</strong></td>
-                  </tr> -->
-                  <!-- The rest of the rows for Proprietary LVLMs for Images -->
-                  <!-- <tr>
-                    <td>GPT-4o-[16f]</td>
-                    <td>1.86</td>
-                    <td>2.03</td>
-                    <td>1.88</td>
-                    <td>1.69</td>
-                    <td>1.86</td>
-                    <td>1.78</td>
-                    <td>1.95</td>
-                    <td>1.78</td>
-                    <td>1.90</td>
-                    <td>1.89</td>
-                    <td>1.80</td>
-                    <td>1.86</td>
-                    <td>Proprietary LVLMs for Images</td>
-                  </tr> -->
+                
                 </tbody>
-              </table>
+              </table> -->
             </div>
           </div>
         </div>
